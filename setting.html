@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Setting</title>
+</head>
+<body>
+<button id="test">Developer</button><br /><br />
+
+<button id="test1">Test 1 developer hud</button><br /><br />
+
+<button id="test2">Test 2 Sound</button><br /><br />
+
+<button id="test3">Test 3 Display</button><br /><br />
+
+<button id="test4">Test 4 Accessibility</button><br /><br />
+
+<button id="test5">Test 5 Hotspot</button><br /><br />
+
+<button id="test6">Test 6 hotspot name pwd</button><br /><br />
+
+<button id="test7">Test 7 notifications</button><br /><br />
+
+<button id="test8">Test 8 homescreens</button><br /><br />
+
+<button id="test9">Test 9 themes</button><br /><br />
+
+<button id="test10">Test 10 answer mode</button><br /><br />
+
+<button id="test11">Test 11 Volte Vowifi</button><br /><br />
+
+<button id="test12">Test 12 Help</button>
+
+<button id="test13">Test 13 Hotspot name "Jiophone" pass "12345678"</button>
+
+
+ <script>
+
+      document.getElementById('test').addEventListener('click', function(e) {
+
+        if(window.MozActivity) {
+
+          var act = new MozActivity({
+
+            name: "configure",
+
+            data: {
+
+              target: "device",
+
+              section: "developer"
+
+            }
+
+          })
+
+        }
+
+        else {
+
+          window.alert('Only Works in KaiOS Devices.')
+
+        }
+
+      }, false)
+
+    </script>
+
+    <script>
+
+      document.getElementById('test1').addEventListener('click', function(e) {
+
+        if(window.MozActivity) {
+
+          var act = new MozActivity({
+
+            name: "configure",
+
+            data: {
+
+              target: "device",
+
+              section: "developer-hud"
+
+            }
+
+          })
+
+        }
+
+        else {
+
+          window.alert('Only Works in KaiOS Devices.')
+
+        }
+
+      }, false)
+
+    </script>
+
+    <script>
+
+      document.getElementById('test2').addEventListener('click', function(e) {
+
+        if(window.MozActivity) {
+
+          var act = new MozActivity({
+
+            name: "configure",
+
+            data: {
+
+              target: "device",
+
+              section: "sound"
+
+            }
+
+          })
+
+        }
+
+        else {
+
+          window.alert('Only Works in KaiOS Devices.')
+
+        }
+
+      }, false)
+
+    </script>
+
+    <script>
+
+      document.getElementById('test3').addEventListener('click', function(e) {
+
+        if(window.MozActivity) {
+
+          var act = new MozActivity({
+
+            name: "configure",
+
+            data: {
+
+              target: "device",
+
+              section: "display"
+
+            }
+
+          })
+
+        }
+
+        else {
+
+          window.alert('Only Works in KaiOS Devices.')
+
+        }
+
+      }, false)
+
+    </script>
+
+    <script>
+
+      document.getElementById('test4').addEventListener('click', function(e) {
+
+        if(window.MozActivity) {
+
+          var act = new MozActivity({
+
+            name: "configure",
+
+            data: {
+
+              target: "device",
+
+              section: "accessibility"
+
+            }
+
+          })
+
+        }
+
+        else {
+
+          window.alert('Only Works in KaiOS Devices.')
+
+        }
+
+      }, false)
+
+    </script>
+
+    <script>
+
+      document.getElementById('test5').addEventListener('click', function(e) {
+
+        if(window.MozActivity) {
+
+          var act = new MozActivity({
+
+            name: "configure",
+
+            data: {
+
+              target: "device",
+
+              section: "hotspot"
+
+            }
+
+          })
+
+         
+
+        }
+
+          }, false)
+
+        var lock = navigator.mozSettings.createLock();
+
+	lock.set({'tethering.wifi.enabled': true});
+
+lock.set({'tethering.wifi.ip': "192.168.1.1"});
+
+lock.set({'tethering.wifi.prefix': "24"});
+
+lock.set({'tethering.wifi.dhcpserver.startip': "192.168.1.10"});
+
+lock.set({'tethering.wifi.dhcpserver.endip': "192.168.1.30"});
+
+lock.set({'tethering.wifi.ssid': "AS Hotspot"});
+
+lock.set({'tethering.wifi.security.type': "wpa-psk"});
+
+lock.set({'tethering.wifi.security.password': "pwdhotspot567"});
+
+        
+
+    
+
+    </script>
+
+
+
+
+    <script>
+
+      document.getElementById('test6').addEventListener('click', function(e) {
+
+        if(window.MozActivity) {
+
+          var act = new MozActivity({
+
+            name: "configure",
+
+            data: {
+
+              target: "device",
+
+              section: "hotspot-wifiSettings"
+
+            }
+
+          })
+
+        }
+
+        else {
+
+          window.alert('Only Works in KaiOS Devices.')
+
+        }
+
+      }, false)
+
+    </script>
+
+    <script>
+
+      document.getElementById('test7').addEventListener('click', function(e) {
+
+        if(window.MozActivity) {
+
+          var act = new MozActivity({
+
+            name: "configure",
+
+            data: {
+
+              target: "device",
+
+              section: "notifications"
+
+            }
+
+          })
+
+        }
+
+        else {
+
+          window.alert('Only Works in KaiOS Devices.')
+
+        }
+
+      }, false)
+
+    </script>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <script>
+
+      document.getElementById('test8').addEventListener('click', function(e) {
+
+        if(window.MozActivity) {
+
+          var act = new MozActivity({
+
+            name: "configure",
+
+            data: {
+
+              target: "device",
+
+              section: "homescreens"
+
+            }
+
+          })
+
+        }
+
+        else {
+
+          window.alert('Only Works in KaiOS Devices.')
+
+        }
+
+      }, false)
+
+    </script>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <script>
+
+      document.getElementById('test9').addEventListener('click', function(e) {
+
+        if(window.MozActivity) {
+
+          var act = new MozActivity({
+
+            name: "configure",
+
+            data: {
+
+              target: "device",
+
+              section: "themes"
+
+            }
+
+          })
+
+        }
+
+        else {
+
+          window.alert('Only Works in KaiOS Devices.')
+
+        }
+
+      }, false)
+
+    </script>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <script>
+
+      document.getElementById('test10').addEventListener('click', function(e) {
+
+        if(window.MozActivity) {
+
+          var act = new MozActivity({
+
+            name: "configure",
+
+            data: {
+
+              target: "device",
+
+              section: "answer-mode"
+
+            }
+
+          })
+
+        }
+
+        else {
+
+          window.alert('Only Works in KaiOS Devices.')
+
+        }
+
+      }, false)
+
+    </script>
+
+    
+
+    
+
+    
+
+    
+
+    <script>
+
+      document.getElementById('test11').addEventListener('click', function(e) {
+
+        if(window.MozActivity) {
+
+          var act = new MozActivity({
+
+            name: "configure",
+
+            data: {
+
+              target: "device",
+
+              section: "volte-vowifi"
+
+            }
+
+          })
+
+        }
+
+        else {
+
+          window.alert('Only Works in KaiOS Devices.')
+
+        }
+
+      }, false)
+
+    </script>
+
+    
+
+    <script>
+
+      document.getElementById('test12').addEventListener('click', function(e) {
+
+        if(window.MozActivity) {
+
+          var act = new MozActivity({
+
+            name: "configure",
+
+            data: {
+
+              target: "device",
+
+              section: "help"
+
+            }
+
+          })
+
+        }
+
+        else {
+
+          window.alert('Only Works in KaiOS Devices.')
+
+        }
+
+      }, false)
+
+    </script>
+<script>
+	document.getElementById('test13').addEventListener('click', function(e) {
+
+var lock = navigator.mozSettings.createLock();
+
+.set({'tethering.wifi.enabled': true});
+
+lock.set({'tethering.wifi.ip': "192.168.1.1"});
+
+lock.set({'tethering.wifi.prefix': "24"});
+
+lock.set({'tethering.wifi.dhcpserver.startip': "192.168.1.10"});
+
+lock.set({'tethering.wifi.dhcpserver.endip': "192.168.1.30"});
+
+lock.set({'tethering.wifi.ssid': "Jiophone"});
+
+lock.set({'tethering.wifi.security.type': "wpa-psk"});
+
+lock.set({'tethering.wifi.security.password': "12345678"});
+
+}
+
+        
+	
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button id="testi">Color-Filter</button>
+<button id="testi1">Color Brightness</button>
+<button id="testi2">Screen Reader</button>
+<button id="testi3">Developer menu</button>
+<button id="testi4">Accessibility</button>
+<button id="testi5">Hotspot</button>
+<button id="testi6">Homescreens</button>
+<button id="testi7">Data-Roaming</button>
+<button id="testi8">Connectivity</button>
+<button id="testi9">Messaging</button>
+<button id="testi10">Sim-Manager</button>
+<button id="testi11">Volume Balance</button>
+<button id="testi12">Airplane mode</button>
+
+
+
+    <script>
+
+      document.getElementById('testi').addEventListener('click', function(e) {
+
+        if(window.MozActivity) {
+
+          var act = new MozActivity({
+
+            name: "configure",
+
+            data: {
+
+              target: "device",
+
+              section: "accessibility-colors"
+
+            }
+
+          })
+
+        }
+
+        else {
+
+          window.alert('Only Works in KaiOS Devices.')
+
+        }
+
+      }, false)
+
+    </script>
+
+    <script>
+
+      document.getElementById('testi1').addEventListener('click', function(e) {
+
+        if(window.MozActivity) {
+
+          var act = new MozActivity({
+
+            name: "configure",
+
+            data: {
+
+              target: "device",
+
+              section: "colorfilter-contrast"
+
+            }
+
+          })
+
+        }
+
+        else {
+
+          window.alert('Only Works in KaiOS Devices.')
+
+        }
+
+      }, false)
+
+    </script>
+
+    <script>
+      
+      document.getElementById('testi2').addEventListener('click', function(e) {
+
+        if(window.MozActivity) {
+
+          var act = new MozActivity({
+
+            name: "configure",
+
+            data: {
+
+              target: "device",
+
+              section: "accessibility-screenreader",
+
+            }
+
+          })
+
+        }
+
+        else {
+
+          window.alert('Only Works in KaiOS Devices.')
+
+        }
+
+      }, false)
+
+    </script>
+
+    <script>
+
+      document.getElementById('testi3').addEventListener('click', function(e) {
+
+        if(window.MozActivity) {
+
+          var act = new MozActivity({
+
+            name: "configure",
+
+            data: {
+
+              target: "device",
+
+              section: "developer"
+
+            }
+
+          })
+
+        }
+
+        else {
+
+          window.alert('Only Works in KaiOS Devices.')
+
+        }
+
+      }, false)
+
+    </script>
+
+    <script>
+
+      document.getElementById('testi4').addEventListener('click', function(e) {
+
+        if(window.MozActivity) {
+
+          var act = new MozActivity({
+
+            name: "configure",
+
+            data: {
+
+              target: "device",
+
+              section: "accessibility"
+
+            }
+
+          })
+
+        }
+
+        else {
+
+          window.alert('Only Works in KaiOS Devices.')
+
+        }
+
+      }, false)
+
+    </script>
+
+    <script>
+
+      document.getElementById('testi5').addEventListener('click', function(e) {
+
+        if(window.MozActivity) {
+
+          var act = new MozActivity({
+
+            name: "configure",
+
+            data: {
+
+              target: "device",
+
+              section: "hotspot"
+
+            }
+
+          })
+
+         
+
+        }
+
+          }, false)
+
+    
+
+    </script>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <script>
+
+      document.getElementById('testi6').addEventListener('click', function(e) {
+
+        if(window.MozActivity) {
+
+          var act = new MozActivity({
+
+            name: "configure",
+
+            data: {
+
+              target: "device",
+
+              section: "sim-manager"
+
+            }
+
+          })
+
+        }
+
+        else {
+
+          window.alert('Only Works in KaiOS Devices.')
+
+        }
+
+      }, false)
+
+    </script>
+  
+
+    <script>
+
+      document.getElementById('testi7').addEventListener('click', function(e) {
+
+        if(window.MozActivity) {
+
+          var act = new MozActivity({
+
+            name: "configure",
+
+            data: {
+
+              target: "device",
+
+              section: "data-roaming"
+
+            }
+
+          })
+
+        }
+
+        else {
+
+          window.alert('Only Works in KaiOS Devices.')
+
+        }
+
+      }, false)
+
+    </script>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <script>
+
+      document.getElementById('testi8').addEventListener('click', function(e) {
+
+        if(window.MozActivity) {
+
+          var act = new MozActivity({
+
+            name: "configure",
+
+            data: {
+
+              target: "device",
+
+              section: "homescreens"
+
+            }
+
+          })
+
+        }
+
+        else {
+
+          window.alert('Only Works in KaiOS Devices.')
+
+        }
+
+      }, false)
+
+    </script>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <script>
+
+      document.getElementById('testi9').addEventListener('click', function(e) {
+
+        if(window.MozActivity) {
+
+          var act = new MozActivity({
+
+            name: "configure",
+
+            data: {
+
+              target: "device",
+
+              section: "accessibility-volume-balance"
+
+            }
+
+          })
+
+        }
+
+        else {
+
+          window.alert('Only Works in KaiOS Devices.')
+
+        }
+
+      }, false)
+
+    </script>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <script>
+
+      document.getElementById('testi10').addEventListener('click', function(e) {
+
+        if(window.MozActivity) {
+
+          var act = new MozActivity({
+
+            name: "configure",
+
+            data: {
+
+              target: "device",
+              
+              section: "airplane-mode"
+            }
+
+          })
+
+        }
+
+        else {
+
+          window.alert('Only Works in KaiOS Devices.')
+
+        }
+
+      }, false)
+
+    </script>
+
+    
+
+    
+
+    
+
+    
+
+    <script>
+
+      document.getElementById('testi11').addEventListener('click', function(e) {
+
+        if(window.MozActivity) {
+
+          var act = new MozActivity({
+
+            name: "configure",
+
+            data: {
+
+              target: "device",
+
+              section: "messaging"
+
+            }
+
+          })
+
+        }
+
+        else {
+
+          window.alert('Only Works in KaiOS Devices.')
+
+        }
+
+      }, false)
+
+    </script>
+
+    
+
+    <script>
+
+      document.getElementById('testi12').addEventListener('click', function(e) {
+
+        if(window.MozActivity) {
+
+          var act = new MozActivity({
+
+            name: "configure",
+
+            data: {
+
+              target: "device",
+
+              section: "connectivity-settings"
+              
+            }
+
+          })
+
+        }
+
+        else {
+
+          window.alert('Only Works in KaiOS Devices.')
+
+        }
+
+      }, false)
+
+    </script>
+
+</body>
+</html>
